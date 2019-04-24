@@ -1,0 +1,59 @@
+{
+  "name": "product-description",
+  "version": "1.0.0",
+  "description": "product description for product page",
+  "author": "Nicholas Miron",
+  "main": "index.js",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/threetexansandacanadian/productDescription.git"
+  },
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "tests": "jest --runInBand --detectOpenHandles --bail --forceExit",
+    "build": "webpack --config ./webpack.config.js -w --mode production",
+    "build-one": "webpack --config ./webpack.config.js --mode production",
+    "start": "nodemon server"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.2",
+    "morgan": "^1.9.1",
+    "newrelic": "^5.6.4",
+    "pg": "^7.10.0",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10",
+    "pm2": "^3.5.0",
+    "style-loader": "^0.23.1",
+    "supertest": "^4.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
