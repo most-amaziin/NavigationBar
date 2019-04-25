@@ -162,11 +162,5 @@ if (generateData === true) {
 }
 file.end();
 console.log("done!!!!!!!!!!!!!!!!");
-console.log("done!!!!!!!!!!!!!!!!");
-console.log("done!!!!!!!!!!!!!!!!");
-console.log("done!!!!!!!!!!!!!!!!");
-console.log("done!!!!!!!!!!!!!!!!");
-
-// });
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));

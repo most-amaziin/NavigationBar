@@ -10,7 +10,7 @@
     "url": "https://github.com/threetexansandacanadian/productDescription.git"
   },
   "engines": {
-    "node": ">=6.13.0"
+    "node": ">=10.15.3"
   },
   "scripts": {
     "tests": "jest --runInBand --detectOpenHandles --bail --forceExit",
