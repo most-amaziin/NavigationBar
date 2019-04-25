@@ -23,7 +23,7 @@ coverage
 .grunt
 
 # Compiled Dirs (http://nodejs.org/api/addons.html)
-dist/bundle.js
+# dist/bundle.js
 
 big.csv
 little.csv
