@@ -20,15 +20,16 @@ const PORT = process.env.PORT || 3000;
 const db = require("../db/index.js");
 
 app.use(cors());
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 app.use(express.static("dist"));
 
 app.get("/api/products/names", (req, res) => {
   const productId = req.query.name;
-  console.log("productID on server :", productId);
+  // console.log("productID on server :", productId);
   db.getOneByName(productId, (err, data) => {
     if (err) {
       console.log("error, darn tootin");
+      res.end();
     } else {
       res.send(data);
     }
